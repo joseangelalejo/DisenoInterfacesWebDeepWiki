@@ -1,0 +1,219 @@
+/* General */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 600px;
+    margin: 0 auto;
+    border: 2px solid #555;
+    font-family: sans-serif;
+    background-color: #ffeb3b;
+    color: #000;
+}
+
+a {
+    color: inherit;
+}
+
+/* Header (flex porque sino, no me salía)*/
+header {
+    background-color: lightgray;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #555;
+}
+
+h1 {
+    margin: 0;
+}
+
+h1 span {
+    font-size: 0.9em;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#navlista li {
+    display: inline-block;
+    padding: 4px 8px;
+}
+
+#navlista a {
+    text-decoration: none;
+}
+
+#navlista a:hover,
+#navlista a:active,
+#navlista a:focus {
+    text-decoration: underline;
+    font-size: 1.2rem;
+}
+
+/* Section principal */
+#sectionprincipal {
+    padding: 20px;
+    text-align: center;
+}
+
+#imagenPlaceholder {
+    max-width: 85%;
+    height: auto;
+}
+
+#textopresentacion {
+    text-align: left;
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+/* Section secundaria: dos bloques inline-block al 50% */
+#sectionsecundaria {
+    background-color: lightgray;
+    border-top: 2px solid #555;
+    border-bottom: 2px solid #555;
+    font-size: 0; /* elimina el hueco entre inline-block */
+}
+
+#informacionevento,
+#comprarentrada {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    padding: 30px 20px;
+    font-size: 1rem;
+}
+
+#informacionevento {
+    text-align: center;
+}
+
+/* caja del tamaño del texto, centrada, con el contenido alineado a la izquierda */
+#informacionevento .datos {
+    display: inline-block;
+    text-align: left;
+}
+
+#comprarentrada {
+    border-left: 2px solid #555;
+    text-align: center;
+    margin: 30px 0;
+    padding: 30px 20px;
+}
+
+#informacionevento h2 {
+    margin-top: 0;
+}
+
+#informacionevento p {
+    margin: 4px 0;
+}
+
+#comprarentrada button {
+    font-size: 1.15rem;
+    padding: 18px 30px;
+    border: 2px solid #555;
+    border-radius: 30px;
+    background-color: transparent;
+    color: inherit;
+    cursor: pointer;
+}
+
+#comprarentrada button:hover {
+    background-color: #000;
+    color: #ffeb3b;
+}
+
+/* Información complementaria y footer */
+#informacioncomplementaria {
+    padding: 20px;
+}
+
+.fa-brands:hover, .volver:hover {
+    font-size: 1.7rem;
+}
+
+footer {
+    background-color: lightgray;
+    border-top: 2px solid #555;
+    padding: 16px;
+    text-align: center;
+}
+
+footer a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+footer a.volver {
+    font-size: 1rem;
+    margin-top: 12px;
+}
+
+/* Móvil */
+@media (width <= 600px) {
+    header {
+        padding-left: 20px;
+    }
+
+    /* el menú sigue horizontal; se compacta para que quepa */
+    #navlista li {
+        padding: 4px 5px;
+    }
+
+    /* los dos bloques siguen lado a lado; se compactan para que quepan */
+    #informacionevento {
+        padding: 24px 12px;
+    }
+
+    #comprarentrada {
+        padding: 24px 12px;
+    }
+
+    #informacionevento h2 {
+        font-size: 1.1rem;
+    }
+
+    #comprarentrada button {
+        font-size: 0.95rem;
+        padding: 14px 14px;
+    }
+}
+
+/* Modo oscuro */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #000;
+        color: #ffeb3b;
+        border-color: #ffeb3b;
+        font-family: Georgia, serif;
+    }
+
+    header,
+    #sectionsecundaria,
+    footer {
+        background-color: #222;
+        border-color: #ffeb3b;
+    }
+
+    #comprarentrada {
+        border-color: #ffeb3b;
+    }
+
+    #comprarentrada button {
+        border-color: #ffeb3b;
+    }
+
+    #comprarentrada button:hover {
+        background-color: #ffeb3b;
+        color: #000;
+    }
+}

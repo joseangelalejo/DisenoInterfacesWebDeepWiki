@@ -1,0 +1,171 @@
+.dashboard {
+    background-color: lightgray;
+    display: grid;
+    grid-template-columns: 250px repeat(3, 1fr);
+    grid-template-rows: 136px 148px 1fr;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 30px;
+    height: calc(100vh - 40px);
+    margin: 20px;
+}
+
+.dashboard > * {
+    border-radius: 16px;
+    padding: 24px;
+}
+
+/* SIDEBAR */
+.sidebar {
+    background-color: #243d64;
+    color: white;
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+    padding: 30px 16px;
+}
+
+.sidebar h1 {
+    font-size: 34px;
+    margin: 0 12px 36px;
+    font-weight: bold;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin-bottom: 8px;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px 22px;
+    border-radius: 11px;
+}
+
+.sidebar li:first-child a {
+    background-color: #3568ad;
+}
+
+.sidebar a:hover {
+    background-color: #3568ad;
+}
+
+/* CABECERA */
+.cabecera {
+    background-color: lightgreen;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.actividad {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row: 3 / 4;
+}
+
+.notas {
+    grid-column: 4 / 5;
+    grid-row: 3 / 4;
+}
+
+/* COLORES */
+.actividad {
+    background-color: bisque;
+}
+
+.proyectos {
+    background-color: lightgreen;
+}
+
+.tareas {
+    background-color: lightpink;
+}
+
+.equipo {
+    background-color: orange;
+}
+
+.notas {
+    background-color: lightblue;
+}
+
+/* TIPOGRAFÍA */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #243854;
+}
+
+h2 {
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+
+.cabecera h1 {
+    font-size: 34px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.cabecera p {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+/* NÚMEROS DE LAS TARJETAS */
+.proyectos p,
+.tareas p,
+.equipo p {
+    font-size: 44px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+/* LISTA DE ACTIVIDADES RECIENTES */
+
+.lista-actividad {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-actividad li {
+    font-size: 18px;
+    margin-bottom: 30px;
+    padding-left: 36px;
+    position: relative;
+}
+
+.lista-actividad li::before {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 5px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+}
+/* Puntos de colores */
+.proyecto-creado::before {
+    background-color: #54b982;
+}
+
+.tarea-completada::before {
+    background-color: #5089ed;
+}
+
+.comentario-foro::before {
+    background-color: #9964cc;
+}

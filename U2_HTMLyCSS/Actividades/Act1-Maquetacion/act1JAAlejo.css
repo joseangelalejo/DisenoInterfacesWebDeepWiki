@@ -1,0 +1,42 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    /* nav ocupa 1 parte, main 4 partes */
+    grid-template-areas:
+        "header header"
+        "nav    main"
+        "footer footer";
+    gap: 10px;
+    margin: 0;
+    padding: 10px;
+}
+
+header {
+    grid-area: header;
+    border: 1px solid black;
+    background-color: rgb(198, 222, 65);
+}
+
+nav {
+    grid-area: nav;
+    border: 1px solid black;
+    background-color: rgb(241, 175, 203);
+}
+
+main {
+    grid-area: main;
+    padding: 3px;
+    border: 1px solid black;
+    background-color: rgb(255, 229, 153);
+}
+
+main > article {
+    border: 1px solid black;
+    background-color: rgb(102, 217, 238);
+}
+
+footer {
+    grid-area: footer;
+    border: 1px solid black;
+    background-color: rgb(180, 187, 233);
+}

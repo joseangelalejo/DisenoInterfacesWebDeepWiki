@@ -1,0 +1,176 @@
+
+/* ESTILOS GENERALES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fafafa;
+    color: #222;
+    min-height: 100vh;
+    padding: 25px;
+}
+
+/* CABECERA */
+
+.cabecera {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.cabecera h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.cabecera p {
+    color: #888;
+    font-size: 1rem;
+}
+
+/* MENÚ DE NAVEGACIÓN */
+
+.menu {
+    background-color: #243d64;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #40c4df;
+}
+
+/* TARJETAS */
+
+.tarjeta {
+    background-color: white;
+    padding: 25px;
+    border-radius: 6px;
+    box-shadow: 0 5px 15px rgba(50, 100, 180, 0.12);
+    border-top: 4px solid transparent;
+    min-height: 180px;
+    position: relative;
+}
+
+.tarjeta h2 {
+    font-size: 1.25rem;
+    margin-bottom: 18px;
+    color: #222;
+}
+
+.tarjeta p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #999;
+    max-width: 300px;
+}
+
+/* COLORES DE LAS TARJETAS */
+
+.team-builder {
+    border-top-color: #ea806d;
+}
+
+.supervisor {
+    border-top-color: #36bfd7;
+}
+
+.calculator {
+    border-top-color: #529fe8;
+}
+
+.karma {
+    border-top-color: #f5bd4e;
+}
+
+/* ICONOS */
+
+.icono {
+    display: block;
+    font-size: 2.5rem;
+    text-align: right;
+    margin-top: 15px;
+}
+
+/* PIE DE PÁGINA */
+
+.pie {
+    text-align: center;
+    padding: 30px 15px;
+    margin-top: 35px;
+    color: #999;
+    font-size: 0.85rem;
+}
+
+/* DISTRIBUCIÓN GRID */
+
+/* Móvil: First Mobile Design */
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "team"
+        "supervisor"
+        "calculator"
+        "karma";
+    gap: 20px;
+
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.team-builder {
+    grid-area: team;
+}
+
+.supervisor {
+    grid-area: supervisor;
+}
+
+.calculator {
+    grid-area: calculator;
+}
+
+.karma {
+    grid-area: karma;
+}
+
+/* Escritorio */
+
+@media (min-width: 768px) {
+
+    .contenedor {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "team supervisor karma"
+            "team calculator karma";
+    }
+
+    .team-builder,
+    .karma {
+        align-self: center;
+    }
+
+}

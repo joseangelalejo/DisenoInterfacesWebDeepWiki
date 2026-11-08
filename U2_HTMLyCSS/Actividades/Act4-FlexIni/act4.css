@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+/* Diseño base: móvil */
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+header,
+nav,
+div,
+main {
+    border: 1px solid #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+header {
+    flex: 0 0 8%;
+    background-color: #111827;
+}
+
+nav {
+    flex: 0 0 8%;
+    background-color: #ef4055;
+}
+
+#hero {
+    flex: 0 0 20%;
+    background-color: #4d8ac7;
+}
+
+main {
+    flex: 0 0 20%;
+    background-color: #213149;
+}
+
+#banner {
+    flex: 0 0 15%;
+    background-color: #ffd36d;
+    color: #222222;
+}
+
+#extra {
+    flex: 0 0 15%;
+    background-color: #4dbb9b;
+    color: #222222;
+}
+
+#image {
+    flex: 0 0 14%;
+    background-color: #b9e4e3;
+    color: #222222;
+}
+
+/* Diseño de escritorio */
+@media (min-width: 901px) {}

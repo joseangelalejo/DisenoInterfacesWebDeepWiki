@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  min-height: 100vh;
+}
+
+body, .complementos {
+  display: flex;
+  flex-direction: column;
+}
+
+/* En móvil, estos contenedores no crean una caja propia. */
+.cabecera, .fila-principal {
+  display: contents;
+}
+
+header, nav, .hero, .main, .banner, .extra, .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 36px;
+  /*min-width: 0; permite que los bloques se estrechen por debajo del ancho de su contenido.*/
+  min-width: 0;
+  flex-basis: 0;
+}
+
+/* flex-grow reparte la altura disponible según estas proporciones. */
+header {
+  flex-grow: 1;
+  background: #101827;
+}
+
+nav {
+  flex-grow: 1;
+  background: #f23850;
+}
+
+.hero {
+  flex-grow: 3;
+  background: #4e87c2;
+}
+
+.main {
+  flex-grow: 3;
+  background: #223247;
+}
+
+.banner {
+  flex-grow: 2;
+  order: 1;
+  background: #ffd56c;
+}
+
+.complementos {
+  flex-grow: 4;
+  flex-basis: 0;
+  order: 2;
+}
+
+.extra, .image {
+  flex-grow: 1;
+}
+
+.banner, .extra, .image {
+  color: #111;
+}
+
+.extra { background: #49b99a; }
+.image { background: #bfe4e5; }
+
+@media (min-width: 1000px) {
+  /* Cabecera, hero, fila y banner tienen proporciones 1, 6, 4 y 2. */
+  .cabecera {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+
+  /* En esta fila, flex-grow reparte el ancho. */
+  header { flex-grow: 1; }
+  nav { flex-grow: 3; }
+
+  .hero { flex-grow: 6; }
+
+  /* La fila ocupa el doble de altura que el banner. */
+  .fila-principal {
+    display: flex;
+    flex-grow: 4;
+    flex-basis: 0;
+  }
+
+  .main {
+    flex-grow: 2;
+    margin-right: 25%; /* Hueco blanco de la referencia. */
+  }
+
+  .complementos {
+    flex-grow: 1;
+    order: 0;
+  }
+
+  .image { order: 1; }
+  .extra { order: 2; }
+
+  .banner { flex-grow: 2; }
+}
