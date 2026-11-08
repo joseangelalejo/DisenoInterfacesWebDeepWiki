@@ -173,13 +173,13 @@ Es **más ligero y sencillo que XML**, y utiliza una estructura **clave → valo
 
 ## **TABLA COMPARATIVA `XML`, `HTML`, `JSON`, `SVG` y `MathML`**
 
-|**Característica** | **XML** | **HTML** | **JSON** | **SVG** | **MathML** |
-|---|---|---|---|---|---|
-| **TIPO de LM** | **Descriptivo/Semántico:** Almacenar, estructurar e intercambiar datos | **Presentación:** Mostrar información en páginas web | **Descriptivo/Semántico:** Almacenar e intercambiar datos | **Descriptivo/Semántico:** Aplicación de XML para mostrar dibujos vectoriales | **Descriptivo/Semántico:** Aplicación de XML para fórmulas matemáticas |
-| **Etiquetas / Estructura** | Etiquetas creadas por el usuario. Utiliza `pares nombre="valor"` | Etiquetas predefinidas por el estándar. `<p>`, `<div>`, `<img>` | Utiliza una estructura `clave -> valor`. `{}` Para Objetos. `[]` Para Arrays (listas) | Utiliza etiquetas predefinidas por el estándar | Utiliza etiquetas predefinidas por el estándar |
-| **Sintaxis** | **Estricta:** bien formado, etiquetas cerradas | **Flexible:** Permite etiquetas sin cerrar y atributos sin comillas | **Muy estricto:** Comillas dobles obligatorias, sin comas finales | **Estricto**: *Sigue las reglas de XML* | **Estricto**: *Sigue las reglas de XML* |
-| **Ámbito de aplicación** | **Documentación electrónica e intercambio de datos:** Define estructura y significado | **Tecnologías de Internet:** Define la presentación de los datos con CSS y JS | **Documentación electrónica e intercambio de datos:** Define estructura y significado | **Lenguaje especializado:** Describe gráficos vectoriales | **Lenguaje especializado:** Describe fórmulas matemáticas |
-| **Ejemplo** | `<XML>`<br>`<libros>`<br>&nbsp;&nbsp;`<titulo>Lenguajes de Marcas</titulo>`<br>`</libros>` | `<div class="libros">`<br>&nbsp;&nbsp;`<h2>Libros</h2>`<br>&nbsp;&nbsp;`<ul>`<br>&nbsp;&nbsp;&nbsp;&nbsp;`<li>Lenguajes de Marcas</li>`<br>&nbsp;&nbsp;`</ul>`<br>`</div>` | `{`<br>&nbsp;&nbsp;`"libros": [`<br>&nbsp;&nbsp;&nbsp;&nbsp;`{`<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"titulo": "Lenguaje de marcas"`<br>&nbsp;&nbsp;&nbsp;&nbsp;`}`<br>&nbsp;&nbsp;`]`<br>`}` | - | - |
+| **Característica**         | **XML**                                                                                    | **HTML**                                                                                                                                                                   | **JSON**                                                                                                                                                                                         | **SVG**                                                                       | **MathML**                                                             |
+| -------------------------- | ------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| **TIPO de LM**             | **Descriptivo/Semántico:** Almacenar, estructurar e intercambiar datos                     | **Presentación:** Mostrar información en páginas web                                                                                                                       | **Descriptivo/Semántico:** Almacenar e intercambiar datos                                                                                                                                        | **Descriptivo/Semántico:** Aplicación de XML para mostrar dibujos vectoriales | **Descriptivo/Semántico:** Aplicación de XML para fórmulas matemáticas |
+| **Etiquetas / Estructura** | Etiquetas creadas por el usuario. Utiliza `pares nombre="valor"`                           | Etiquetas predefinidas por el estándar. `<p>`, `<div>`, `<img>`                                                                                                            | Utiliza una estructura `clave -> valor`. `{}` Para Objetos. `[]` Para Arrays (listas)                                                                                                            | Utiliza etiquetas predefinidas por el estándar                                | Utiliza etiquetas predefinidas por el estándar                         |
+| **Sintaxis**               | **Estricta:** bien formado, etiquetas cerradas                                             | **Flexible:** Permite etiquetas sin cerrar y atributos sin comillas                                                                                                        | **Muy estricto:** Comillas dobles obligatorias, sin comas finales                                                                                                                                | **Estricto**: *Sigue las reglas de XML*                                       | **Estricto**: *Sigue las reglas de XML*                                |
+| **Ámbito de aplicación**   | **Documentación electrónica e intercambio de datos:** Define estructura y significado      | **Tecnologías de Internet:** Define la presentación de los datos con CSS y JS                                                                                              | **Documentación electrónica e intercambio de datos:** Define estructura y significado                                                                                                            | **Lenguaje especializado:** Describe gráficos vectoriales                     | **Lenguaje especializado:** Describe fórmulas matemáticas              |
+| **Ejemplo**                | `<XML>`<br>`<libros>`<br>&nbsp;&nbsp;`<titulo>Lenguajes de Marcas</titulo>`<br>`</libros>` | `<div class="libros">`<br>&nbsp;&nbsp;`<h2>Libros</h2>`<br>&nbsp;&nbsp;`<ul>`<br>&nbsp;&nbsp;&nbsp;&nbsp;`<li>Lenguajes de Marcas</li>`<br>&nbsp;&nbsp;`</ul>`<br>`</div>` | `{`<br>&nbsp;&nbsp;`"libros": [`<br>&nbsp;&nbsp;&nbsp;&nbsp;`{`<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"titulo": "Lenguaje de marcas"`<br>&nbsp;&nbsp;&nbsp;&nbsp;`}`<br>&nbsp;&nbsp;`]`<br>`}` | -                                                                             | -                                                                      |
 
 ---
 
@@ -221,13 +221,13 @@ Se escriben siempre con **Ampersand `&`**. Ejemplos:
 
 #### **Tabla Ejemplo de Entidades XML**
 
-| **Entidad** | **Representación** | **Descripción** |
-|:-------:|:--------------:|:-----------:|
-| **`&lt;`** | **<** | Menor que |
-| **`&gt;`** | **>** | Mayor que |
-| **`&amp;`** | **&** | Ampersand |
-| **`&apos;`** | **'** | Apóstrofo |
-| **`&quot;`** | **"** | Comillas dobles |
+| **Entidad**  | **Representación** | **Descripción** |
+| :----------: | :----------------: | :-------------: |
+|  **`&lt;`**  |       **<**        |    Menor que    |
+|  **`&gt;`**  |       **>**        |    Mayor que    |
+| **`&amp;`**  |       **&**        |    Ampersand    |
+| **`&apos;`** |       **'**        |    Apóstrofo    |
+| **`&quot;`** |       **"**        | Comillas dobles |
 
 ---
 
@@ -281,13 +281,13 @@ Define **qué elementos (etiquetas) pueden existir** en el XML y **qué contenid
 
 **Símbolos de cardinalidad:**
 
-| **Símbolo** | **Significado** |
-|:-----------:|:----------------|
-| `+` | Uno o más |
-| `*` | Cero o más |
-| `?` | Cero o uno (opcional) |
-| `,` | Secuencia (orden específico) |
-| `\|` | Alternativa (uno u otro) |
+| **Símbolo** | **Significado**              |
+| :---------: | :--------------------------- |
+|     `+`     | Uno o más                    |
+|     `*`     | Cero o más                   |
+|     `?`     | Cero o uno (opcional)        |
+|     `,`     | Secuencia (orden específico) |
+|    `\|`     | Alternativa (uno u otro)     |
 
 ---
 
@@ -566,18 +566,18 @@ Indica que el elemento puede contener **cualquier tipo de contenido** (texto, ot
 
 ### **Resumen de conceptos clave**
 
-| **Término** | **Significado** |
-|-------------|-----------------|
-| `<!ELEMENT>` | Define qué elementos existen y qué contienen |
-| `<!ATTLIST>` | Define los atributos de un elemento |
-| `ID` | Atributo con valor único en el documento |
-| `IDREF` | Atributo que referencia a un `ID` existente |
-| `#PCDATA` | El elemento contiene texto procesable |
-| `EMPTY` | El elemento está vacío (sin contenido) |
-| `#REQUIRED` | El atributo es obligatorio |
-| `#IMPLIED` | El atributo es opcional |
-| `#FIXED` | El atributo tiene un valor fijo |
+| **Término**        | **Significado**                                         |
+| ------------------ | ------------------------------------------------------- |
+| `<!ELEMENT>`       | Define qué elementos existen y qué contienen            |
+| `<!ATTLIST>`       | Define los atributos de un elemento                     |
+| `ID`               | Atributo con valor único en el documento                |
+| `IDREF`            | Atributo que referencia a un `ID` existente             |
+| `#PCDATA`          | El elemento contiene texto procesable                   |
+| `EMPTY`            | El elemento está vacío (sin contenido)                  |
+| `#REQUIRED`        | El atributo es obligatorio                              |
+| `#IMPLIED`         | El atributo es opcional                                 |
+| `#FIXED`           | El atributo tiene un valor fijo                         |
 | `(valor1\|valor2)` | El atributo solo puede tener esos valores (enumeración) |
-| `+` | Uno o más elementos |
-| `*` | Cero o más elementos |
-| `?` | Elemento opcional (cero o uno) |
+| `+`                | Uno o más elementos                                     |
+| `*`                | Cero o más elementos                                    |
+| `?`                | Elemento opcional (cero o uno)                          |

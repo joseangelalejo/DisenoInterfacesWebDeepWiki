@@ -416,4 +416,3 @@ El texto alternativo debe describir la imagen cuando aporta información. Si es 
 - [ ] Estados `hover` y `focus` visibles.
 - [ ] Contraste suficiente.
 - [ ] No se depende solo del color.
-
